@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Performative Complicity | Gendered Consumption, the Pink Tax &amp; the Social Construction of Femininity</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Playfair Display (Editorial Serif) & Inter (Clean Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#FAF8F5',
+            cream: '#F3EFEA',
+            charcoal: '#1E1E24',
+            muted: '#5A5A66',
+            teal: {
+              DEFAULT: '#1F6E6E',
+              light: '#E6F2F2',
+              dark: '#154E4E'
+            },
+            rose: {
+              DEFAULT: '#C85A6E',
+              light: '#FBECEF',
+              dark: '#A03E50'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Inter"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF8F5;
+      color: #1E1E24;
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, .font-editorial {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    /* Custom subtle scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F3EFEA;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C7C2BA;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #1F6E6E;
+    }
+    /* Print Styles for Clean PDF Export */
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+      body {
+        background-color: #FFFFFF !important;
+        color: #000000 !important;
+      }
+      .chapter-body {
+        display: block !important;
+      }
+      section {
+        break-inside: avoid-page;
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+      }
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-rose-light selection:text-rose-dark">
+
+  <!-- Sticky Top Navigation Bar -->
+  <header class="sticky top-0 z-50 bg-ivory/90 backdrop-blur-md border-b border-stone-200/80 no-print">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-2.5 group">
+        <span class="w-3 h-3 rounded-full bg-rose group-hover:scale-110 transition-transform"></span>
+        <span class="font-editorial font-semibold text-lg tracking-tight text-charcoal">Performative Complicity</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-muted">
+        <a href="#abstract" class="hover:text-teal transition-colors">Abstract</a>
+        <a href="#price-audit" class="hover:text-teal transition-colors">Retail Audit</a>
+        <a href="#methodology" class="hover:text-teal transition-colors">Sample</a>
+        <a href="#findings" class="hover:text-teal transition-colors">Findings</a>
+        <a href="#theory" class="hover:text-teal transition-colors">Theory &amp; Policy</a>
+        <a href="#full-thesis" class="hover:text-teal transition-colors">Full Thesis</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button onclick="window.print()" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-charcoal text-white hover:bg-teal transition-colors shadow-sm cursor-pointer">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
+          </svg>
+          <span>Print / Save Clean PDF</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Quick Jump Bar -->
+    <div class="md:hidden flex items-center gap-4 overflow-x-auto px-4 py-2 border-t border-stone-200/60 text-xs font-medium text-muted bg-cream/60">
+      <a href="#abstract" class="whitespace-nowrap hover:text-teal">Abstract</a>
+      <a href="#price-audit" class="whitespace-nowrap hover:text-teal">Retail Audit</a>
+      <a href="#methodology" class="whitespace-nowrap hover:text-teal">Sample</a>
+      <a href="#findings" class="whitespace-nowrap hover:text-teal">Findings</a>
+      <a href="#theory" class="whitespace-nowrap hover:text-teal">Theory</a>
+      <a href="#full-thesis" class="whitespace-nowrap hover:text-teal">Full Thesis</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="top" class="relative pt-12 pb-16 sm:pt-20 sm:pb-24 border-b border-stone-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Institutional Tag -->
+      <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-light text-teal text-xs font-semibold tracking-wide uppercase mb-6">
+        <span>University of Bucharest</span>
+        <span>&bull;</span>
+        <span>Faculty of Sociology &amp; Social Assistance</span>
+        <span>&bull;</span>
+        <span>Bachelor's Thesis (June 2026)</span>
+      </div>
+
+      <!-- Main Title & Subtitle -->
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-charcoal leading-[1.08] mb-5">
+        Performative Complicity.
+      </h1>
+      <p class="font-editorial italic text-xl sm:text-3xl text-muted leading-snug max-w-3xl mb-8">
+        Gendered Consumption, the Pink Tax, and the Social Construction of Femininity
+      </p>
+
+      <!-- Author & Coordinator Metadata -->
+      <div class="flex flex-wrap items-center gap-y-2 gap-x-6 text-sm text-charcoal/80 pb-8 mb-8 border-b border-stone-200">
+        <div>
+          <span class="text-muted">Author:</span>
+          <strong class="font-semibold text-charcoal ml-1">Ciulei Ana-Antoanela</strong>
+        </div>
+        <div>
+          <span class="text-muted">Scientific Coordinator:</span>
+          <strong class="font-semibold text-charcoal ml-1">PhD. Poenaru Florin</strong>
+        </div>
+        <div>
+          <span class="text-muted">Location:</span>
+          <strong class="font-semibold text-charcoal ml-1">Bucharest, Romania</strong>
+        </div>
+      </div>
+
+      <!-- Core Research Question Callout -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-stone-200/90 shadow-sm relative overflow-hidden mb-10">
+        <div class="absolute top-0 left-0 w-1.5 h-full bg-rose"></div>
+        <span class="text-xs font-bold uppercase tracking-widest text-rose block mb-2">Core Sociological Puzzle</span>
+        <blockquote class="font-editorial text-xl sm:text-2xl lg:text-[26px] text-charcoal leading-relaxed">
+          &ldquo;Why do women who know the pink tax is unfair keep buying the pink version anyway?&rdquo;
+        </blockquote>
+        <p class="text-sm text-muted mt-3">
+          Investigating the commercial processes through which femininity is made visible, desirable, and economically costly across adult personal care and children's toy markets.
+        </p>
+      </div>
+
+      <!-- Quick Summary Stats Bar -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-cream/80 rounded-2xl p-5 border border-stone-200/70">
+          <div class="text-2xl sm:text-3xl font-editorial font-bold text-teal">10–35%</div>
+          <div class="text-xs font-semibold uppercase tracking-wider text-charcoal mt-1">Local Retail Markup</div>
+          <p class="text-xs text-muted mt-1">In-store audit at Jumbo Romania, Bucharest (March 2026)</p>
+        </div>
+
+        <div class="bg-cream/80 rounded-2xl p-5 border border-stone-200/70">
+          <div class="text-2xl sm:text-3xl font-editorial font-bold text-rose">10 Interviews</div>
+          <div class="text-xs font-semibold uppercase tracking-wider text-charcoal mt-1">Qualitative Fieldwork</div>
+          <p class="text-xs text-muted mt-1">5 women without children &amp; 5 mothers in Bucharest (Feb–Apr 2026)</p>
+        </div>
+
+        <div class="bg-cream/80 rounded-2xl p-5 border border-stone-200/70">
+          <div class="text-2xl sm:text-3xl font-editorial font-bold text-charcoal">42%</div>
+          <div class="text-xs font-semibold uppercase tracking-wider text-charcoal mt-1">Higher Female Pricing</div>
+          <p class="text-xs text-muted mt-1">Frequency women's items cost more than men's equivalents (NYC DCA, 2015)</p>
+        </div>
+
+        <div class="bg-cream/80 rounded-2xl p-5 border border-stone-200/70">
+          <div class="text-2xl sm:text-3xl font-editorial font-bold text-charcoal">6–9%</div>
+          <div class="text-xs font-semibold uppercase tracking-wider text-charcoal mt-1">EU Gender Price Gap</div>
+          <p class="text-xs text-muted mt-1">Documented average price differential across EU member states (EP, 2020)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Abstract & Central Analytical Contribution -->
+  <section id="abstract" class="py-16 sm:py-20 border-b border-stone-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Abstract Text -->
+        <div class="lg:col-span-7">
+          <span class="text-xs font-bold uppercase tracking-widest text-teal block mb-2">01 &bull; Overview &amp; Abstract</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-charcoal mb-6">Thesis Abstract</h2>
+          
+          <div class="space-y-4 text-base text-charcoal/90 leading-relaxed">
+            <p>
+              This thesis investigates the social construction of femininity through the lens of consumer culture, examining how contemporary market segmentation strategies and gender-based pricing practices—commonly discussed under the umbrella term of the &ldquo;pink tax&rdquo;—function as part of a broader gendered marketplace through which femininity is made visible, desirable, and economically costly.
+            </p>
+            <p>
+              Drawing on Judith Butler's theory of gender performativity, Peter Berger and Thomas Luckmann's framework of the social construction of reality, and materialist feminist accounts of the relationship between gender, consumption, and capital accumulation, this study analyses the mechanisms by which commercial culture generates, sustains, and naturalises femininity as a category simultaneously of identity and of consumption.
+            </p>
+            <p>
+              The empirical component consists of ten semi-structured qualitative interviews conducted with two groups: five women without children and five mothers, all residing in Bucharest, Romania. The thesis situates these dynamics within postsocialist Romania, where consumerism acquired particular symbolic and social weight following the transition from state socialism, and where gendered consumption intersects with class position and social reproduction.
+            </p>
+          </div>
+
+          <!-- Keywords -->
+          <div class="mt-8 pt-6 border-t border-stone-200">
+            <span class="text-xs font-semibold uppercase tracking-wider text-muted block mb-3">Keywords</span>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full bg-rose-light text-rose-dark text-xs font-medium">performative complicity</span>
+              <span class="px-3 py-1 rounded-full bg-teal-light text-teal-dark text-xs font-medium">pink tax</span>
+              <span class="px-3 py-1 rounded-full bg-cream text-charcoal text-xs font-medium border border-stone-200">femininity</span>
+              <span class="px-3 py-1 rounded-full bg-cream text-charcoal text-xs font-medium border border-stone-200">consumerism</span>
+              <span class="px-3 py-1 rounded-full bg-cream text-charcoal text-xs font-medium border border-stone-200">gender performativity</span>
+              <span class="px-3 py-1 rounded-full bg-cream text-charcoal text-xs font-medium border border-stone-200">market segmentation</span>
+              <span class="px-3 py-1 rounded-full bg-cream text-charcoal text-xs font-medium border border-stone-200">postsocialism</span>
+              <span class="px-3 py-1 rounded-full bg-cream text-charcoal text-xs font-medium border border-stone-200">social reproduction</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Central Analytical Contribution Box -->
+        <div class="lg:col-span-5 bg-charcoal text-ivory rounded-3xl p-7 sm:p-8 shadow-lg">
+          <div class="inline-block px-3 py-1 rounded-full bg-rose/20 text-rose-light text-xs font-semibold uppercase tracking-wider mb-4">
+            Core Theoretical Contribution
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4">
+            What is &ldquo;Performative Complicity&rdquo;?
+          </h3>
+          <p class="text-sm sm:text-base text-stone-300 leading-relaxed mb-5">
+            Neither straightforward <em class="text-white">false consciousness</em> (being duped by advertising) nor purely <em class="text-white">free consumer choice</em>.
+          </p>
+          <p class="text-sm text-stone-300 leading-relaxed mb-6">
+            Performative complicity names the structural condition in which consumers <strong class="text-white font-semibold">critically recognise</strong> the constructed, unequal nature of gendered marketing yet <strong class="text-white font-semibold">continue to reproduce</strong> feminised consumption practices because exiting carries real social, relational, and personal costs.
+          </p>
+
+          <div class="grid grid-cols-2 gap-3 pt-5 border-t border-stone-700 text-xs">
+            <div class="bg-white/5 rounded-xl p-3">
+              <span class="text-rose-light font-semibold block mb-1">1. Habit &amp; Routine</span>
+              <span class="text-stone-400">Taken-for-granted everyday self-care scripts</span>
+            </div>
+            <div class="bg-white/5 rounded-xl p-3">
+              <span class="text-rose-light font-semibold block mb-1">2. Sensory Pleasure</span>
+              <span class="text-stone-400">Genuine enjoyment of scent, texture &amp; ritual</span>
+            </div>
+            <div class="bg-white/5 rounded-xl p-3">
+              <span class="text-rose-light font-semibold block mb-1">3. Social Pressure</span>
+              <span class="text-stone-400">Peer policing, household norms &amp; belonging</span>
+            </div>
+            <div class="bg-white/5 rounded-xl p-3">
+              <span class="text-rose-light font-semibold block mb-1">4. Identity Work</span>
+              <span class="text-stone-400">Enacting intelligible femininity via goods</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Interactive Retail Price Audit (Jumbo Romania, March 2026) -->
+  <section id="price-audit" class="py-16 sm:py-20 bg-cream/60 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-rose block mb-2">02 &bull; Empirical Price Audit</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-charcoal">The Pink Tax in Romanian Stores</h2>
+          <p class="text-sm sm:text-base text-muted mt-2 max-w-2xl">
+            In-store price audit conducted at <strong>Jumbo Romania, Bucharest (March 2026)</strong> comparing functionally identical products across gender-targeted aisles. Toggle items below to calculate the cumulative Pink Tax basket.
+          </p>
+        </div>
+
+        <!-- Category Filter Buttons -->
+        <div class="inline-flex rounded-xl bg-white p-1 border border-stone-200 shadow-sm self-start no-print" role="group">
+          <button onclick="filterProducts('all')" id="filter-all" class="filter-btn px-3.5 py-2 rounded-lg text-xs font-semibold bg-charcoal text-white transition-colors cursor-pointer">
+            All Categories (7)
+          </button>
+          <button onclick="filterProducts('care')" id="filter-care" class="filter-btn px-3.5 py-2 rounded-lg text-xs font-semibold text-muted hover:text-charcoal transition-colors cursor-pointer">
+            Personal Care (4)
+          </button>
+          <button onclick="filterProducts('toys')" id="filter-toys" class="filter-btn px-3.5 py-2 rounded-lg text-xs font-semibold text-muted hover:text-charcoal transition-colors cursor-pointer">
+            Children's Toys (3)
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Interactive Table & Bar Visualization -->
+        <div class="lg:col-span-8 bg-white rounded-3xl border border-stone-200 shadow-sm overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="bg-stone-100/80 border-b border-stone-200 text-xs font-bold uppercase tracking-wider text-muted">
+                  <th class="py-4 px-4 sm:px-6">Basket</th>
+                  <th class="py-4 px-4">Product (Functionally Equivalent)</th>
+                  <th class="py-4 px-4 text-right">Men's / Neutral</th>
+                  <th class="py-4 px-4 text-right">Women's / Pink</th>
+                  <th class="py-4 px-4 sm:px-6 text-right">Premium</th>
+                </tr>
+              </thead>
+              <tbody id="audit-table-body" class="divide-y divide-stone-100 text-sm">
+                <!-- Populated by JS -->
+              </tbody>
+            </table>
+          </div>
+          <div class="px-6 py-4 bg-stone-50 border-t border-stone-200 flex flex-wrap items-center justify-between gap-2 text-xs text-muted">
+            <span>Source: Table 1, In-store data collection at Jumbo Romania, Bucharest (March 2026).</span>
+            <div class="flex items-center gap-4">
+              <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-teal"></span> Men's / Standard</span>
+              <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-rose"></span> Women's / Pink Version</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Pink Tax Basket Calculator -->
+        <div class="lg:col-span-4 bg-white rounded-3xl p-6 sm:p-7 border border-stone-200 shadow-sm sticky top-24">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-teal">Interactive Simulator</span>
+            <button onclick="toggleAllBasket()" id="toggle-all-btn" class="text-xs font-medium text-rose hover:underline cursor-pointer no-print">
+              Select All
+            </button>
+          </div>
+          <h3 class="text-2xl font-bold text-charcoal mb-2">Pink Tax Basket Calculator</h3>
+          <p class="text-xs text-muted mb-6">
+            Check or uncheck items in the table to see what a consumer pays for choosing the feminised version over the functionally identical standard item.
+          </p>
+
+          <div class="space-y-4 mb-6">
+            <div class="flex justify-between items-center p-3.5 rounded-2xl bg-teal-light/60 border border-teal/15">
+              <div>
+                <span class="text-xs font-medium text-teal-dark block">Standard / Men's Basket</span>
+                <span class="text-[11px] text-muted" id="basket-count">7 items selected</span>
+              </div>
+              <span class="text-xl font-bold text-teal-dark" id="total-mens">222.95 RON</span>
+            </div>
+
+            <div class="flex justify-between items-center p-3.5 rounded-2xl bg-rose-light/70 border border-rose/15">
+              <div>
+                <span class="text-xs font-medium text-rose-dark block">Feminised / Pink Basket</span>
+                <span class="text-[11px] text-muted">Same utility, gendered packaging</span>
+              </div>
+              <span class="text-xl font-bold text-rose-dark" id="total-womens">273.44 RON</span>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-charcoal text-white">
+            <div class="flex items-baseline justify-between">
+              <span class="text-xs uppercase tracking-wider text-stone-300">Cumulative Pink Tax</span>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-rose text-white" id="total-percent">+22.6%</span>
+            </div>
+            <div class="text-3xl font-editorial font-bold text-white mt-1" id="total-diff">+50.49 RON</div>
+            <p class="text-[11px] text-stone-400 mt-1.5">
+              Extra cost paid purely for gendered colour, scent, and market segmentation on these items.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Methodology & Participant Sample -->
+  <section id="methodology" class="py-16 sm:py-20 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-teal block mb-2">03 &bull; Research Design &amp; Sample</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-charcoal mb-4">Qualitative Methodology &amp; Fieldwork</h2>
+        <p class="text-base text-muted leading-relaxed">
+          Conducted in Bucharest between <strong>February and April 2026</strong>, the empirical study comprises <strong>10 semi-structured interviews</strong> (42–78 minutes each; average ~58 minutes) analyzed via Braun &amp; Clarke's (2006) six-stage thematic analysis combining deductive theoretical codes and inductive emergent themes. All participants are pseudonymised.
+        </p>
+      </div>
+
+      <!-- Methodological Pillars -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
+        <div class="bg-white rounded-2xl p-5 border border-stone-200">
+          <div class="text-xs font-bold uppercase tracking-wider text-teal mb-1">Sampling Strategy</div>
+          <div class="font-editorial text-lg font-bold text-charcoal mb-2">Purposive Comparative Sample</div>
+          <p class="text-xs text-muted leading-relaxed">
+            Divided into two groups of five urban Romanian women (ages 24–45) to capture both adult identity work and intergenerational child-rearing dynamics.
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border border-stone-200">
+          <div class="text-xs font-bold uppercase tracking-wider text-rose mb-1">Analytical Method</div>
+          <div class="font-editorial text-lg font-bold text-charcoal mb-2">Hybrid Thematic Analysis</div>
+          <p class="text-xs text-muted leading-relaxed">
+            Braun &amp; Clarke (2006) 6-phase coding integrating deductive concepts (performativity, naturalisation, class) with inductive field insights.
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border border-stone-200">
+          <div class="text-xs font-bold uppercase tracking-wider text-charcoal mb-1">Ethics &amp; Anonymity</div>
+          <div class="font-editorial text-lg font-bold text-charcoal mb-2">Full Pseudonymisation</div>
+          <p class="text-xs text-muted leading-relaxed">
+            Approved under Faculty of Sociology and Social Assistance ethical guidelines with written informed consent and strict anonymisation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Two Participant Groups -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- Group A -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm">
+          <div class="flex items-center justify-between pb-4 mb-5 border-b border-stone-100">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-teal">Group A (n = 5)</span>
+              <h3 class="text-2xl font-bold text-charcoal">Women Without Children</h3>
+            </div>
+            <span class="px-3 py-1 rounded-full bg-teal-light text-teal text-xs font-semibold">Ages 24–35</span>
+          </div>
+
+          <ul class="space-y-3.5 text-sm">
+            <li class="flex items-start justify-between gap-4 p-3 rounded-xl bg-ivory">
+              <div>
+                <span class="font-bold text-charcoal">P1 &bull; Ana, 27</span>
+                <span class="text-muted block text-xs">Marketing specialist, Bucharest</span>
+              </div>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-md bg-white border border-stone-200 text-muted">High market literacy</span>
+            </li>
+            <li class="flex items-start justify-between gap-4 p-3 rounded-xl bg-ivory">
+              <div>
+                <span class="font-bold text-charcoal">P2 &bull; Mihaela, 31</span>
+                <span class="text-muted block text-xs">Secondary school teacher, Bucharest</span>
+              </div>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-md bg-white border border-stone-200 text-muted">Attempted product crossover</span>
+            </li>
+            <li class="flex items-start justify-between gap-4 p-3 rounded-xl bg-ivory">
+              <div>
+                <span class="font-bold text-charcoal">P3 &bull; Raluca, 24</span>
+                <span class="text-muted block text-xs">University student, Bucharest</span>
+              </div>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-md bg-white border border-stone-200 text-muted">Doxa &amp; naturalisation</span>
+            </li>
+            <li class="flex items-start justify-between gap-4 p-3 rounded-xl bg-ivory">
+              <div>
+                <span class="font-bold text-charcoal">P4 &bull; Ioana, 35</span>
+                <span class="text-muted block text-xs">NGO project coordinator, Bucharest</span>
+              </div>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-md bg-white border border-stone-200 text-muted">Gender equality perspective</span>
+            </li>
+            <li class="flex items-start justify-between gap-4 p-3 rounded-xl bg-ivory">
+              <div>
+                <span class="font-bold text-charcoal">P5 &bull; Denisa, 29</span>
+                <span class="text-muted block text-xs">Graphic designer, Bucharest</span>
+              </div>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-md bg-white border border-stone-200 text-muted">Systematic price comparison</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Group B -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm">
+          <div class="flex items-center justify-between pb-4 mb-5 border-b border-stone-100">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-rose">Group B (n = 5)</span>
+              <h3 class="text-2xl font-bold text-charcoal">Mothers (Child Under 12)</h3>
+            </div>
+            <span class="px-3 py-1 rounded-full bg-rose-light text-rose-dark text-xs font-semibold">Ages 34–45</span>
+          </div>
+
+          <ul class="space-y-3.5 text-sm">
+            <li class="flex items-start justify-between gap-4 p-3 rounded-xl bg-ivory">
+              <div>
+                <span class="font-bold text-charcoal">P6 &bull; Cristina, 38</span>
+                <span class="text-muted block text-xs">Accountant, Bucharest</span>
+              </div>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-md bg-white border border-stone-200 text-rose-dark">Daughter (7), Son (4)</span>
+            </li>
+            <li class="flex items-start justify-between gap-4 p-3 rounded-xl bg-ivory">
+              <div>
+                <span class="font-bold text-charcoal">P7 &bull; Elena, 42</span>
+                <span class="text-muted block text-xs">Nurse, Bucharest</span>
+              </div>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-md bg-white border border-stone-200 text-rose-dark">Two daughters (10, 6)</span>
+            </li>
+            <li class="flex items-start justify-between gap-4 p-3 rounded-xl bg-ivory">
+              <div>
+                <span class="font-bold text-charcoal">P8 &bull; Andreea, 34</span>
+                <span class="text-muted block text-xs">HR manager, Bucharest</span>
+              </div>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-md bg-white border border-stone-200 text-rose-dark">Son (5), Daughter (9)</span>
+            </li>
+            <li class="flex items-start justify-between gap-4 p-3 rounded-xl bg-ivory">
+              <div>
+                <span class="font-bold text-charcoal">P9 &bull; Loredana, 45</span>
+                <span class="text-muted block text-xs">Secondary school teacher, Bucharest</span>
+              </div>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-md bg-white border border-stone-200 text-rose-dark">Daughter (12)</span>
+            </li>
+            <li class="flex items-start justify-between gap-4 p-3 rounded-xl bg-ivory">
+              <div>
+                <span class="font-bold text-charcoal">P10 &bull; Simona, 36</span>
+                <span class="text-muted block text-xs">Self-employed, Bucharest</span>
+              </div>
+              <span class="text-[11px] font-medium px-2.5 py-1 rounded-md bg-white border border-stone-200 text-rose-dark">Daughter (3)</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Key Findings & Voices from the Field -->
+  <section id="findings" class="py-16 sm:py-20 bg-cream/60 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-10">
+        <span class="text-xs font-bold uppercase tracking-widest text-rose block mb-2">04 &bull; Empirical Analysis</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-charcoal mb-3">Key Themes &amp; Voices from the Field</h2>
+        <p class="text-base text-muted">
+          Explore the three analytical themes emerging from the interviews, illustrating how critical awareness coexists with everyday compliance and feminist counter-socialisation.
+        </p>
+      </div>
+
+      <!-- Theme Switcher Tabs -->
+      <div class="flex flex-wrap gap-2 mb-8 no-print">
+        <button onclick="switchTheme(1)" id="tab-theme-1" class="theme-tab px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-charcoal text-white shadow-sm transition-all cursor-pointer">
+          Theme 1: Awareness &amp; Normalisation
+        </button>
+        <button onclick="switchTheme(2)" id="tab-theme-2" class="theme-tab px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white text-muted border border-stone-200 hover:text-charcoal transition-all cursor-pointer">
+          Theme 2: Identity Work &amp; Pleasure
+        </button>
+        <button onclick="switchTheme(3)" id="tab-theme-3" class="theme-tab px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white text-muted border border-stone-200 hover:text-charcoal transition-all cursor-pointer">
+          Theme 3: Mothers, Toys &amp; Socialisation
+        </button>
+      </div>
+
+      <!-- Theme 1 Panel -->
+      <div id="panel-theme-1" class="theme-panel space-y-6">
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200">
+          <div class="text-xs font-bold uppercase tracking-wider text-teal mb-1">Chapter 4 &bull; The Gendered Marketplace</div>
+          <h3 class="text-2xl sm:text-3xl font-bold text-charcoal mb-3">Critical Awareness Without Critical Practice</h3>
+          <p class="text-sm sm:text-base text-muted leading-relaxed max-w-4xl">
+            All ten participants recognised that women's products cost more than men's equivalents. Yet awareness rarely translates into sustained exit: domestic friction, taken-for-granted assumptions (Bourdieu's <em>doxa</em>), and inelastic essentials (such as menstrual products) anchor gendered purchasing.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 flex flex-col justify-between">
+            <blockquote class="font-editorial italic text-lg text-charcoal leading-relaxed mb-4">
+              &ldquo;I know exactly what they are doing. The razor is the same, the shampoo is basically the same—they change the colour, they put a flower on it, they double the price. And I know this. And then I go and buy the pink one anyway. Because it smells nicer. Or I think it smells nicer. I am genuinely not sure anymore.&rdquo;
+            </blockquote>
+            <div class="text-xs font-semibold text-rose">— Ana (P1), 27, marketing specialist</div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 flex flex-col justify-between">
+            <blockquote class="font-editorial italic text-lg text-charcoal leading-relaxed mb-4">
+              &ldquo;I tried. I bought the men's razor for two months, I saved money, and it worked just as well. But then there was this whole thing at home about whose razor was whose, and whose shampoo was whose, and in the end it was just easier to go back to mine. The pink one.&rdquo;
+            </blockquote>
+            <div class="text-xs font-semibold text-teal">— Mihaela (P2), 31, secondary school teacher</div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 flex flex-col justify-between">
+            <blockquote class="font-editorial italic text-lg text-charcoal leading-relaxed mb-4">
+              &ldquo;It's a tax on being a woman. And it became visible to me here in Romania especially after 2000, when all these Western brands came in and suddenly everything in the women's section cost more. As if being a woman was a luxury we had to keep purchasing.&rdquo;
+            </blockquote>
+            <div class="text-xs font-semibold text-charcoal">— Ioana (P4), 35, NGO project coordinator</div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 flex flex-col justify-between">
+            <blockquote class="font-editorial italic text-lg text-charcoal leading-relaxed mb-4">
+              &ldquo;I always check both sides. Men's section, women's section. Deodorant, razor, shampoo. I've saved a lot of money... [But] there are things where you just can't cross over. Menstrual products. There's no men's equivalent. You pay what they charge. Full stop.&rdquo;
+            </blockquote>
+            <div class="text-xs font-semibold text-muted">— Denisa (P5), 29, graphic designer</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Theme 2 Panel -->
+      <div id="panel-theme-2" class="theme-panel hidden space-y-6">
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200">
+          <div class="text-xs font-bold uppercase tracking-wider text-rose mb-1">Chapter 5 &bull; Performing Femininity</div>
+          <h3 class="text-2xl sm:text-3xl font-bold text-charcoal mb-3">Consumption as Identity Work &amp; The Pleasure Problem</h3>
+          <p class="text-sm sm:text-base text-muted leading-relaxed max-w-4xl">
+            Drawing on Butler (1990) and McRobbie (2009), personal care rituals are experienced not as vanity, but as authentic self-expression. Furthermore, the sensory pleasure women derive from fragrance and skincare is genuine—even while commercially scripted and enforced through peer culture.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 flex flex-col justify-between">
+            <blockquote class="font-editorial italic text-lg text-charcoal leading-relaxed mb-4">
+              &ldquo;My morning routine is my time. The creams, the serum, the way everything smells in the morning—it's not about being vain. It's about being me. About being a woman who takes care of herself. I don't think I could give it up even if I wanted to. It's too much a part of who I am.&rdquo;
+            </blockquote>
+            <div class="text-xs font-semibold text-teal">— Elena (P7), 42, nurse &amp; mother of two</div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 flex flex-col justify-between">
+            <blockquote class="font-editorial italic text-lg text-charcoal leading-relaxed mb-4">
+              &ldquo;I know all the arguments. I've read the articles. But I genuinely love perfume. I love the ritual of putting it on. I don't want to be told that my pleasure is false consciousness. It's my pleasure.&rdquo;
+            </blockquote>
+            <div class="text-xs font-semibold text-rose">— Andreea (P8), 34, HR manager &amp; mother</div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 flex flex-col justify-between">
+            <blockquote class="font-editorial italic text-lg text-charcoal leading-relaxed mb-4">
+              &ldquo;Do I think it's fair that my shampoo costs more than my husband's when it's basically the same product? No. Do I buy it anyway? Yes. Because I like the way it smells, and I like the way my hair looks... This is how most women are.&rdquo;
+            </blockquote>
+            <div class="text-xs font-semibold text-charcoal">— Cristina (P6), 38, accountant &amp; mother</div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 flex flex-col justify-between">
+            <blockquote class="font-editorial italic text-lg text-charcoal leading-relaxed mb-4">
+              &ldquo;When I was fifteen, sixteen—the brands you used said everything about you. Whether you were using the right shampoo, the right deodorant. Girls would talk about it. It was absolutely a social currency. These companies got us to police each other.&rdquo;
+            </blockquote>
+            <div class="text-xs font-semibold text-muted">— Loredana (P9), 45, teacher &amp; mother</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Theme 3 Panel -->
+      <div id="panel-theme-3" class="theme-panel hidden space-y-6">
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200">
+          <div class="text-xs font-bold uppercase tracking-wider text-teal mb-1">Chapter 6 &bull; Intergenerational Social Reproduction</div>
+          <h3 class="text-2xl sm:text-3xl font-bold text-charcoal mb-3">Mothers, &ldquo;The Pink Aisle&rdquo;, and Feminist Consumer Literacy</h3>
+          <p class="text-sm sm:text-base text-muted leading-relaxed max-w-4xl">
+            The toy market functions as an early institution of gender socialisation, teaching children that girls' aspirations cost more. Mothers act as mediators—balancing protection against peer exclusion with deliberate counter-socialisation (buying non-gendered kits and teaching retail literacy).
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 flex flex-col justify-between">
+            <blockquote class="font-editorial italic text-lg text-charcoal leading-relaxed mb-4">
+              &ldquo;There were 'girls' science kits'—the same science experiments as the regular kit, but with a pink box and flowers on it—and they cost about thirty percent more. Why? Because they're for girls?&rdquo;
+            </blockquote>
+            <div class="text-xs font-semibold text-rose">— Andreea (P8), 34, HR manager &amp; mother</div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 flex flex-col justify-between">
+            <blockquote class="font-editorial italic text-lg text-charcoal leading-relaxed mb-4">
+              &ldquo;I noticed there was basically the same kitchen in the boys' section, the same size, same plastic... sold as a 'workshop'. The girls' kitchen was pink with flowers and it cost nine lei more. Nine lei for the colour pink. I bought the workshop kitchen. My daughter doesn't care, she cooks in it every day.&rdquo;
+            </blockquote>
+            <div class="text-xs font-semibold text-teal">— Simona (P10), 36, self-employed &amp; mother</div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 flex flex-col justify-between">
+            <blockquote class="font-editorial italic text-lg text-charcoal leading-relaxed mb-4">
+              &ldquo;I tell her: choose what you like, but know that they are trying to sell you something. And know it costs more.&rdquo;
+            </blockquote>
+            <div class="text-xs font-semibold text-charcoal">— Loredana (P9), 45, teacher &amp; mother of a 12-year-old daughter</div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 flex flex-col justify-between">
+            <blockquote class="font-editorial italic text-lg text-charcoal leading-relaxed mb-4">
+              &ldquo;It's like they sat down and decided: girls will clean and look pretty, boys will build and discover. Is that what we want to teach them?&rdquo;
+            </blockquote>
+            <div class="text-xs font-semibold text-muted">— Cristina (P6), 38, accountant &amp; mother</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 5: Theoretical Framework, Conclusions & Policy Recommendations -->
+  <section id="theory" class="py-16 sm:py-20 border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Theoretical Foundations -->
+      <div class="mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-teal block mb-2">05 &bull; Theoretical Architecture</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-charcoal mb-8">Key Concepts &amp; Intellectual Lineage</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="bg-white rounded-2xl p-6 border border-stone-200">
+            <span class="text-xs font-bold text-rose uppercase tracking-wider">Butler (1990)</span>
+            <h3 class="text-xl font-bold text-charcoal mt-1 mb-2">Gender Performativity</h3>
+            <p class="text-xs sm:text-sm text-muted leading-relaxed">
+              Gender has no prediscursive essence; it is enacted through repeated, socially sanctioned acts. Buying feminised goods enacts femininity while creating the illusion of natural interiority.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-stone-200">
+            <span class="text-xs font-bold text-teal uppercase tracking-wider">Berger &amp; Luckmann (1966) &bull; West &amp; Zimmerman (1987)</span>
+            <h3 class="text-xl font-bold text-charcoal mt-1 mb-2">Social Construction &amp; &ldquo;Doing Gender&rdquo;</h3>
+            <p class="text-xs sm:text-sm text-muted leading-relaxed">
+              Examines how arbitrary commercial segmentation becomes institutionalised and legitimised as everyday common sense (&ldquo;women's products are simply more refined&rdquo;).
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-stone-200">
+            <span class="text-xs font-bold text-charcoal uppercase tracking-wider">Federici (2004) &bull; Harvey (2003) &bull; McRobbie (2009)</span>
+            <h3 class="text-xl font-bold text-charcoal mt-1 mb-2">Feminist Political Economy</h3>
+            <p class="text-xs sm:text-sm text-muted leading-relaxed">
+              The beauty and personal care industries monetise reproductive self-presentation labour, packaging compliance as post-feminist empowerment and self-care.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-stone-200">
+            <span class="text-xs font-bold text-teal uppercase tracking-wider">Gr&uuml;nberg (2000) &bull; Verdery (1996)</span>
+            <h3 class="text-xl font-bold text-charcoal mt-1 mb-2">Postsocialist Romania Context</h3>
+            <p class="text-xs sm:text-sm text-muted leading-relaxed">
+              Following 1989 scarcity, Western branded goods carried intense symbolic value as markers of modernity, social distinction, and re-traditionalised femininity.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-stone-200">
+            <span class="text-xs font-bold text-rose uppercase tracking-wider">Orenstein (2011) &bull; Sweet (2013)</span>
+            <h3 class="text-xl font-bold text-charcoal mt-1 mb-2">Social Reproduction &amp; Toys</h3>
+            <p class="text-xs sm:text-sm text-muted leading-relaxed">
+              Gender-segregated toy aisles socialise young girls into domestic/aesthetic roles early, producing the next generation of gendered consumers.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-stone-200">
+            <span class="text-xs font-bold text-charcoal uppercase tracking-wider">Bourdieu (1984) &bull; Intersectional Class</span>
+            <h3 class="text-xl font-bold text-charcoal mt-1 mb-2">Class, Doxa &amp; Exit Capacity</h3>
+            <p class="text-xs sm:text-sm text-muted leading-relaxed">
+              Middle-class urban women possess cultural capital to critique the pink tax and flexibility to switch items, whereas lower-income women bear a heavier material burden.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Conclusions & Policy Recommendations -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <!-- 4 Main Conclusions -->
+        <div class="lg:col-span-7 bg-white rounded-3xl p-7 sm:p-8 border border-stone-200 shadow-sm">
+          <span class="text-xs font-bold uppercase tracking-wider text-rose block mb-2">Synthesis</span>
+          <h3 class="text-2xl sm:text-3xl font-bold text-charcoal mb-6">Four Principal Conclusions</h3>
+          
+          <div class="space-y-5">
+            <div class="flex gap-4">
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-teal text-white font-bold text-xs flex items-center justify-center">01</span>
+              <div>
+                <h4 class="font-bold text-charcoal text-sm sm:text-base">An Ensemble of Commercial Processes</h4>
+                <p class="text-xs sm:text-sm text-muted mt-1 leading-relaxed">
+                  The pink tax is not a single levy or simple price gouging—it is an infrastructure of product differentiation, packaging, scenting, and pricing that produces femininity as a consumption category.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-rose text-white font-bold text-xs flex items-center justify-center">02</span>
+              <div>
+                <h4 class="font-bold text-charcoal text-sm sm:text-base">Performative Complicity</h4>
+                <p class="text-xs sm:text-sm text-muted mt-1 leading-relaxed">
+                  Critical knowledge does not automatically enable exit because non-performance carries tangible costs: social sanction, household friction, and the loss of genuine sensory pleasures.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-charcoal text-white font-bold text-xs flex items-center justify-center">03</span>
+              <div>
+                <h4 class="font-bold text-charcoal text-sm sm:text-base">Class &amp; Gender Intersectionality</h4>
+                <p class="text-xs sm:text-sm text-muted mt-1 leading-relaxed">
+                  Middle-class women navigate class-specific brand expectations alongside greater financial exit options, while lower-income women face a proportionally steeper economic penalty.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-teal-dark text-white font-bold text-xs flex items-center justify-center">04</span>
+              <div>
+                <h4 class="font-bold text-charcoal text-sm sm:text-base">Toy Markets as Social Reproduction</h4>
+                <p class="text-xs sm:text-sm text-muted mt-1 leading-relaxed">
+                  Gendered toy pricing teaches children early that femininity is costlier to perform, positioning feminist mothering and consumer literacy as crucial forms of counter-socialisation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Policy & Industry Recommendations -->
+        <div class="lg:col-span-5 bg-teal-light/60 rounded-3xl p-7 sm:p-8 border border-teal/20 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-teal-dark block mb-2">Practical &amp; Policy Impact</span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-charcoal mb-6">Recommendations</h3>
+
+            <div class="space-y-4">
+              <div class="bg-white rounded-2xl p-4 border border-teal/15">
+                <div class="text-xs font-bold uppercase text-teal mb-1">Fiscal Policy</div>
+                <p class="text-xs sm:text-sm text-charcoal font-medium">
+                  Extend reduced VAT rates (building on Romania's 2022 5% VAT reduction for menstrual hygiene products) to essential personal care items.
+                </p>
+              </div>
+
+              <div class="bg-white rounded-2xl p-4 border border-teal/15">
+                <div class="text-xs font-bold uppercase text-teal mb-1">Retail Transparency</div>
+                <p class="text-xs sm:text-sm text-charcoal font-medium">
+                  Mandate unit-price and gender-pricing transparency labels in retail environments for functionally equivalent personal care products.
+                </p>
+              </div>
+
+              <div class="bg-white rounded-2xl p-4 border border-teal/15">
+                <div class="text-xs font-bold uppercase text-rose mb-1">Toy Industry Standards</div>
+                <p class="text-xs sm:text-sm text-charcoal font-medium">
+                  Introduce industry codes of practice curbing gender-segregated toy marketing and decoupling product colour from price premiums.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-teal/15 text-xs text-teal-dark">
+            <strong>Future Research Directions:</strong> Systematic large-scale retail price audits across Romania, cross-class samples, and historical tracing of postsocialist consumer femininity.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Clean Full Thesis Chapter Reader (Excluding Turnitin Pages 34-36) -->
+  <section id="full-thesis" class="py-16 sm:py-20 bg-cream/40">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-charcoal block mb-2">06 &bull; Complete Academic Text</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-charcoal">Thesis Chapter Reader</h2>
+          <p class="text-sm text-muted mt-1">
+            Structured full-text summary of Chapters 1–7 and Bibliography (clean academic edition).
+          </p>
+        </div>
+
+        <button onclick="toggleAllChapters()" id="expand-chapters-btn" class="px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-stone-300 text-charcoal hover:bg-stone-100 transition-colors self-start cursor-pointer no-print">
+          Expand All Chapters
+        </button>
+      </div>
+
+      <div class="space-y-3" id="chapters-accordion">
+        
+        <!-- Chapter 1 -->
+        <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden">
+          <button onclick="toggleChapter(1)" class="w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-stone-50 transition-colors cursor-pointer">
+            <div>
+              <span class="text-xs font-bold text-teal uppercase tracking-wider">Chapter 1</span>
+              <h3 class="text-lg font-bold text-charcoal">Introduction</h3>
+            </div>
+            <span id="icon-ch-1" class="text-xl font-light text-muted">+</span>
+          </button>
+          <div id="body-ch-1" class="chapter-body hidden px-6 pb-6 pt-2 text-sm text-charcoal/90 leading-relaxed space-y-3 border-t border-stone-100">
+            <p>
+              Walk into any Romanian supermarket and a familiar scene presents itself: in the personal care aisle, two versions of functionally the same product sit side by side—one in dark packaging, one in pink—and the pink one costs more. In the toy section, a grey-and-yellow plastic &ldquo;workshop&rdquo; kitchen sits across from an identical pink floral kitchen priced ten lei higher.
+            </p>
+            <p>
+              This thesis addresses why women who are aware and critical of gender-based marketing continue to reproduce feminised consumption practices daily. It introduces <strong>performative complicity</strong> to describe knowledgeable participants in a commercial system whose logic they partially contest yet remain socially, materially, and relationally invested in reproducing—situated within postsocialist urban Romania following the post-1989 expansion of Western consumer goods.
+            </p>
+          </div>
+        </div>
+
+        <!-- Chapter 2 -->
+        <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden">
+          <button onclick="toggleChapter(2)" class="w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-stone-50 transition-colors cursor-pointer">
+            <div>
+              <span class="text-xs font-bold text-teal uppercase tracking-wider">Chapter 2</span>
+              <h3 class="text-lg font-bold text-charcoal">Literature Review and Theoretical Framework</h3>
+            </div>
+            <span id="icon-ch-2" class="text-xl font-light text-muted">+</span>
+          </button>
+          <div id="body-ch-2" class="chapter-body hidden px-6 pb-6 pt-2 text-sm text-charcoal/90 leading-relaxed space-y-3 border-t border-stone-100">
+            <p>
+              <strong>2.1–2.2 Social Construction &amp; Gender Performativity:</strong> Synthesises Berger &amp; Luckmann (1966), West &amp; Zimmerman's (1987) &ldquo;doing gender,&rdquo; and Judith Butler's (1990) theory that gender is enacted through repeated, socially enforced performances rather than expressing a biological essence.
+            </p>
+            <p>
+              <strong>2.3–2.5 Political Economy, Segmentation &amp; The Pink Tax:</strong> Integrates Hochschild (1983), Harvey (2003), Federici (2004), Wolf (1991), and McRobbie (2009) to show how beauty and personal care markets monetise reproductive self-presentation labour. Reviews empirical pink tax studies (NYC DCA, 2015; European Parliament B&ouml;hmer &amp; Saraceno, 2020; Guittar et al., 2022; Moshary et al., 2023) alongside original March 2026 retail data from Jumbo Romania showing 10%–35% premiums.
+            </p>
+            <p>
+              <strong>2.6–2.7 Toys &amp; Postsocialist Romania:</strong> Examines early gender socialisation in toy markets (Blakemore &amp; Centers, 2005; Orenstein, 2011; Sweet, 2013) and Romania's post-1989 transition (Verdery, 1996; Gr&uuml;nberg, 2000; Dragolea, 2012), where Western consumer femininity became intertwined with modernity and middle-class distinction.
+            </p>
+          </div>
+        </div>
+
+        <!-- Chapter 3 -->
+        <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden">
+          <button onclick="toggleChapter(3)" class="w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-stone-50 transition-colors cursor-pointer">
+            <div>
+              <span class="text-xs font-bold text-teal uppercase tracking-wider">Chapter 3</span>
+              <h3 class="text-lg font-bold text-charcoal">Methodology</h3>
+            </div>
+            <span id="icon-ch-3" class="text-xl font-light text-muted">+</span>
+          </button>
+          <div id="body-ch-3" class="chapter-body hidden px-6 pb-6 pt-2 text-sm text-charcoal/90 leading-relaxed space-y-3 border-t border-stone-100">
+            <p>
+              Employs a constructionist qualitative design using semi-structured interviews conducted in Bucharest between February and April 2026 (42–78 minutes each; mean ~58 minutes). Purposive sampling recruited 10 participants across two equal groups: Group A (5 women without children, ages 24–35) and Group B (5 mothers of children under 12, ages 34–45).
+            </p>
+            <p>
+              Verbatim transcripts were analysed via Braun and Clarke's (2006) six-stage thematic analysis combining deductive theoretical codes and inductive codes. Full informed consent and pseudonymisation were maintained in accordance with University of Bucharest ethical standards.
+            </p>
+          </div>
+        </div>
+
+        <!-- Chapter 4 -->
+        <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden">
+          <button onclick="toggleChapter(4)" class="w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-stone-50 transition-colors cursor-pointer">
+            <div>
+              <span class="text-xs font-bold text-rose uppercase tracking-wider">Chapter 4</span>
+              <h3 class="text-lg font-bold text-charcoal">The Gendered Marketplace: Awareness, Pricing, and Normalisation</h3>
+            </div>
+            <span id="icon-ch-4" class="text-xl font-light text-muted">+</span>
+          </button>
+          <div id="body-ch-4" class="chapter-body hidden px-6 pb-6 pt-2 text-sm text-charcoal/90 leading-relaxed space-y-3 border-t border-stone-100">
+            <p>
+              Demonstrates how critical awareness of gendered price differentials coexists with continued purchasing. Participants either experience gendered pricing as naturalised common sense (Bourdieu's <em>doxa</em>) or find deliberate resistance (such as buying men's razors) undermined by household/relational norms and inelastic categories like menstrual hygiene products.
+            </p>
+          </div>
+        </div>
+
+        <!-- Chapter 5 -->
+        <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden">
+          <button onclick="toggleChapter(5)" class="w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-stone-50 transition-colors cursor-pointer">
+            <div>
+              <span class="text-xs font-bold text-rose uppercase tracking-wider">Chapter 5</span>
+              <h3 class="text-lg font-bold text-charcoal">Performing Femininity: Consumption as Identity Work</h3>
+            </div>
+            <span id="icon-ch-5" class="text-xl font-light text-muted">+</span>
+          </button>
+          <div id="body-ch-5" class="chapter-body hidden px-6 pb-6 pt-2 text-sm text-charcoal/90 leading-relaxed space-y-3 border-t border-stone-100">
+            <p>
+              Explores how daily skincare, scent, and haircare routines operate as identity work producing the effect of a coherent feminine self. Analyses &ldquo;The Pleasure Problem&rdquo;: participants derive genuine sensory enjoyment from feminised rituals while navigating adolescent and adult peer policing that enforces brand conformity.
+            </p>
+          </div>
+        </div>
+
+        <!-- Chapter 6 -->
+        <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden">
+          <button onclick="toggleChapter(6)" class="w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-stone-50 transition-colors cursor-pointer">
+            <div>
+              <span class="text-xs font-bold text-rose uppercase tracking-wider">Chapter 6</span>
+              <h3 class="text-lg font-bold text-charcoal">Mothers, Toys, and the Socialisation of Gendered Consumption</h3>
+            </div>
+            <span id="icon-ch-6" class="text-xl font-light text-muted">+</span>
+          </button>
+          <div id="body-ch-6" class="chapter-body hidden px-6 pb-6 pt-2 text-sm text-charcoal/90 leading-relaxed space-y-3 border-t border-stone-100">
+            <p>
+              Examines mothers' encounters with &ldquo;the pink aisle&rdquo; and price premiums on girls' toys—including +10% markups on pink toy kitchens versus &ldquo;workshops&rdquo; and +29% markups on floral-packaged &ldquo;girls' science kits.&rdquo; Highlights intergenerational counter-socialisation and retail literacy as forms of feminist mothering (O'Reilly, 2004).
+            </p>
+          </div>
+        </div>
+
+        <!-- Chapter 7 & Bibliography -->
+        <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden">
+          <button onclick="toggleChapter(7)" class="w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-stone-50 transition-colors cursor-pointer">
+            <div>
+              <span class="text-xs font-bold text-charcoal uppercase tracking-wider">Chapter 7 &amp; References</span>
+              <h3 class="text-lg font-bold text-charcoal">Conclusions, Policy Implications &amp; Core Bibliography</h3>
+            </div>
+            <span id="icon-ch-7" class="text-xl font-light text-muted">+</span>
+          </button>
+          <div id="body-ch-7" class="chapter-body hidden px-6 pb-6 pt-2 text-sm text-charcoal/90 leading-relaxed space-y-3 border-t border-stone-100">
+            <p>
+              Synthesises the thesis's theoretical contributions, outlines VAT and retail transparency policy recommendations, and notes directions for future quantitative and cross-class research.
+            </p>
+            <div class="pt-3 border-t border-stone-100 text-xs text-muted space-y-1.5">
+              <strong class="text-charcoal block mb-1">Selected Key References:</strong>
+              <p>&bull; Berger, P. L., &amp; Luckmann, T. (1966). <em>The social construction of reality</em>. Doubleday.</p>
+              <p>&bull; B&ouml;hmer, S., &amp; Saraceno, C. (2020). <em>The price of being a woman: The gender price differential in the EU</em>. European Parliament Research Service.</p>
+              <p>&bull; Bourdieu, P. (1984). <em>Distinction: A social critique of the judgement of taste</em>. Harvard University Press.</p>
+              <p>&bull; Braun, V., &amp; Clarke, V. (2006). Using thematic analysis in psychology. <em>Qualitative Research in Psychology</em>, 3(2), 77–101.</p>
+              <p>&bull; Butler, J. (1990). <em>Gender trouble: Feminism and the subversion of identity</em>. Routledge.</p>
+              <p>&bull; Federici, S. (2004). <em>Caliban and the witch</em>. Autonomedia.</p>
+              <p>&bull; Gr&uuml;nberg, L. (2000). Women's politics and policies under Romanian post-communism. In <em>Reproducing gender</em> (pp. 307–336). Princeton University Press.</p>
+              <p>&bull; McRobbie, A. (2009). <em>The aftermath of feminism: Gender, culture and social change</em>. SAGE.</p>
+              <p>&bull; Moshary, S., Tuchman, A., &amp; Vajravelu, N. (2023). Gender-based pricing in consumer packaged goods: A pink tax? <em>Marketing Science</em>, 42(6), 1100–1119.</p>
+              <p>&bull; New York City Department of Consumer Affairs. (2015). <em>From cradle to cane: The cost of being a female consumer</em>.</p>
+              <p>&bull; Orenstein, P. (2011). <em>Cinderella ate my daughter</em>. HarperCollins.</p>
+              <p>&bull; West, C., &amp; Zimmerman, D. H. (1987). Doing gender. <em>Gender &amp; Society</em>, 1(2), 125–151.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-stone-400 py-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+      <div>
+        <div class="font-editorial text-white text-lg font-semibold">
+          Performative Complicity.
+        </div>
+        <p class="text-xs mt-1">
+          Bachelor's Thesis by <strong class="text-stone-200">Ciulei Ana-Antoanela</strong> &bull; Scientific Coordinator: <strong class="text-stone-200">PhD. Poenaru Florin</strong>
+        </p>
+        <p class="text-xs mt-0.5">
+          University of Bucharest, Faculty of Sociology and Social Assistance, Department of Sociology &bull; June 2026
+        </p>
+      </div>
+
+      <div class="text-xs text-stone-500">
+        All interview participant names are pseudonymised in accordance with university research ethics.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    // Retail Price Audit Dataset (Table 1, Jumbo Romania, March 2026)
+    const auditProducts = [
+      {
+        id: 1,
+        category: 'care',
+        name: 'Disposable razor (5-pack)',
+        note: 'Functionally identical blades & handle',
+        mens: 9.99,
+        womens: 13.49,
+        premium: 35,
+        selected: true
+      },
+      {
+        id: 2,
+        category: 'care',
+        name: 'Antiperspirant deodorant (150ml)',
+        note: 'Same active formula, gendered fragrance',
+        mens: 11.50,
+        womens: 14.99,
+        premium: 30,
+        selected: true
+      },
+      {
+        id: 3,
+        category: 'care',
+        name: 'Moisturising body lotion (400ml)',
+        note: 'Equivalent volume & base formulation',
+        mens: 16.99,
+        womens: 22.99,
+        premium: 35,
+        selected: true
+      },
+      {
+        id: 4,
+        category: 'care',
+        name: 'Shower gel (500ml)',
+        note: 'Same bottle volume, floral vs. neutral packaging',
+        mens: 10.49,
+        womens: 13.99,
+        premium: 33,
+        selected: true
+      },
+      {
+        id: 5,
+        category: 'toys',
+        name: "Children's toy kitchen (plastic, same size)",
+        note: 'Sold as grey/yellow "workshop" vs. pink floral kitchen',
+        mens: 89.00,
+        womens: 98.00,
+        premium: 10,
+        selected: true
+      },
+      {
+        id: 6,
+        category: 'toys',
+        name: "Children's science kit (same experiments)",
+        note: 'Identical kit contents in pink floral box',
+        mens: 34.99,
+        womens: 44.99,
+        premium: 29,
+        selected: true
+      },
+      {
+        id: 7,
+        category: 'toys',
+        name: "Children's bicycle helmet (same size/safety)",
+        note: 'Same safety certification & shell size',
+        mens: 49.99,
+        womens: 59.99,
+        premium: 20,
+        selected: true
+      }
+    ];
+
+    let currentFilter = 'all';
+
+    // Render Retail Audit Table & Visual Bars
+    function renderAuditTable() {
+      const tbody = document.getElementById('audit-table-body');
+      tbody.innerHTML = '';
+
+      const filtered = currentFilter === 'all'
+        ? auditProducts
+        : auditProducts.filter(p => p.category === currentFilter);
+
+      filtered.forEach(item => {
+        const mensWidth = Math.round((item.mens / item.womens) * 100);
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-ivory/70 transition-colors';
+        tr.innerHTML = `
+          <td class="py-4 px-4 sm:px-6 align-top">
+            <input type="checkbox" ${item.selected ? 'checked' : ''} onchange="toggleItem(${item.id})"
+              aria-label="Include ${item.name} in basket"
+              class="w-4 h-4 mt-1 rounded border-stone-300 text-rose focus:ring-rose cursor-pointer accent-[#C85A6E]" />
+          </td>
+          <td class="py-4 px-4">
+            <div class="font-semibold text-charcoal">${item.name}</div>
+            <div class="text-xs text-muted mt-0.5">${item.note}</div>
+            <!-- Mini Proportional Price Bar -->
+            <div class="mt-2.5 space-y-1 max-w-xs">
+              <div class="h-1.5 rounded-full bg-teal" style="width: ${mensWidth}%"></div>
+              <div class="h-1.5 rounded-full bg-rose w-full"></div>
+            </div>
+          </td>
+          <td class="py-4 px-4 text-right font-medium text-teal-dark whitespace-nowrap align-top">
+            ${item.mens.toFixed(2)} RON
+          </td>
+          <td class="py-4 px-4 text-right font-semibold text-rose-dark whitespace-nowrap align-top">
+            ${item.womens.toFixed(2)} RON
+          </td>
+          <td class="py-4 px-4 sm:px-6 text-right whitespace-nowrap align-top">
+            <span class="inline-block px-2.5 py-1 rounded-full text-xs font-bold bg-rose-light text-rose-dark">
+              +${item.premium}%
+            </span>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      updateCalculator();
+    }
+
+    // Toggle individual item in basket
+    function toggleItem(id) {
+      const product = auditProducts.find(p => p.id === id);
+      if (product) {
+        product.selected = !product.selected;
+        updateCalculator();
+      }
+    }
+
+    // Select or Deselect all items
+    function toggleAllBasket() {
+      const anyUnselected = auditProducts.some(p => !p.selected);
+      auditProducts.forEach(p => p.selected = anyUnselected);
+      renderAuditTable();
+    }
+
+    // Filter table by category
+    function filterProducts(category) {
+      currentFilter = category;
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('bg-charcoal', 'text-white');
+        btn.classList.add('text-muted');
+      });
+      const activeBtn = document.getElementById(`filter-${category}`);
+      activeBtn.classList.add('bg-charcoal', 'text-white');
+      activeBtn.classList.remove('text-muted');
+
+      renderAuditTable();
+    }
+
+    // Recalculate Pink Tax totals
+    function updateCalculator() {
+      const selectedItems = auditProducts.filter(p => p.selected);
+      const totalMens = selectedItems.reduce((sum, p) => sum + p.mens, 0);
+      const totalWomens = selectedItems.reduce((sum, p) => sum + p.womens, 0);
+      const diff = totalWomens - totalMens;
+      const pct = totalMens > 0 ? ((diff / totalMens) * 100).toFixed(1) : '0.0';
+
+      document.getElementById('basket-count').textContent = `${selectedItems.length} item${selectedItems.length === 1 ? '' : 's'} selected`;
+      document.getElementById('total-mens').textContent = `${totalMens.toFixed(2)} RON`;
+      document.getElementById('total-womens').textContent = `${totalWomens.toFixed(2)} RON`;
+      document.getElementById('total-diff').textContent = `+${diff.toFixed(2)} RON`;
+      document.getElementById('total-percent').textContent = `+${pct}%`;
+
+      const toggleBtn = document.getElementById('toggle-all-btn');
+      toggleBtn.textContent = selectedItems.length === auditProducts.length ? 'Clear All' : 'Select All';
+    }
+
+    // Theme Tabs Switcher
+    function switchTheme(themeNum) {
+      document.querySelectorAll('.theme-panel').forEach(panel => panel.classList.add('hidden'));
+      document.getElementById(`panel-theme-${themeNum}`).classList.remove('hidden');
+
+      document.querySelectorAll('.theme-tab').forEach(tab => {
+        tab.classList.remove('bg-charcoal', 'text-white', 'shadow-sm');
+        tab.classList.add('bg-white', 'text-muted', 'border', 'border-stone-200');
+      });
+
+      const activeTab = document.getElementById(`tab-theme-${themeNum}`);
+      activeTab.classList.add('bg-charcoal', 'text-white', 'shadow-sm');
+      activeTab.classList.remove('bg-white', 'text-muted', 'border', 'border-stone-200');
+    }
+
+    // Chapter Accordion Toggle
+    function toggleChapter(num) {
+      const body = document.getElementById(`body-ch-${num}`);
+      const icon = document.getElementById(`icon-ch-${num}`);
+      const isHidden = body.classList.contains('hidden');
+
+      if (isHidden) {
+        body.classList.remove('hidden');
+        icon.textContent = '−';
+      } else {
+        body.classList.add('hidden');
+        icon.textContent = '+';
+      }
+    }
+
+    let allChaptersExpanded = false;
+    function toggleAllChapters() {
+      allChaptersExpanded = !allChaptersExpanded;
+      for (let i = 1; i <= 7; i++) {
+        const body = document.getElementById(`body-ch-${i}`);
+        const icon = document.getElementById(`icon-ch-${i}`);
+        if (allChaptersExpanded) {
+          body.classList.remove('hidden');
+          icon.textContent = '−';
+        } else {
+          body.classList.add('hidden');
+          icon.textContent = '+';
+        }
+      }
+      document.getElementById('expand-chapters-btn').textContent = allChaptersExpanded ? 'Collapse All Chapters' : 'Expand All Chapters';
+    }
+
+    // Initialize on load
+    document.addEventListener('DOMContentLoaded', () => {
+      renderAuditTable();
+    });
+  </script>
+</body>
+</html>
